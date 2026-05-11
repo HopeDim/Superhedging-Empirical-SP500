@@ -235,18 +235,7 @@ The notebook generates:
 
 ---
 
-## 🔗 Integration with Paper
 
-If you have the full paper (under review), the figures generated here should match:
-- Empirical section figures
-- Summary statistics tables
-
-### Using in Your Own Paper
-1. Run the notebook: `jupyter notebook Empirical_Analysis.ipynb`
-2. Use generated PDF figures: `\includegraphics{fig_*.pdf}`
-3. Include LaTeX tables: `\input{table_*.tex}`
-
----
 
 ## 📚 Mathematical Background
 
@@ -277,84 +266,7 @@ Find: Minimum V_0 such that ∃ admissible strategy φ_t with V_T ≥ φ(S_T)
 }
 ```
 
-### Reproducibility
-✅ All results are **fully reproducible**
-- Random seeds are not used (deterministic data loading)
-- All outputs saved as high-resolution PDFs (300 dpi)
-- Exact versions of dependencies listed
-- Step-by-step documented in notebook
 
-### Extending This Work
-You can:
-- Modify κ values in CSV loading cells
-- Change period length (currently N=21)
-- Adjust calibration window (currently 252 days)
-- Use different ETFs (modify ticker in yfinance call)
-- Add new visualization methods
 
----
 
-## ❓ FAQ
 
-**Q: Where do I get the CSV files?**  
-A: They should be included in this repository. If not, they were pre-computed using the main algorithm (not included here).
-
-**Q: Can I use different transaction costs κ?**  
-A: Yes! Simply provide new CSV files named `results_kappa_*.csv` and adjust the loading cell (Cell 5).
-
-**Q: How do I update the SPY data?**  
-A: The notebook automatically downloads fresh data via `yfinance`. Just re-run it.
-
-**Q: What if I get errors about missing packages?**  
-A: Install them: `pip install pandas numpy matplotlib yfinance seaborn scikit-learn`
-
-**Q: Can this work with other assets?**  
-A: Yes! Modify the ticker and date range in the `yf.download()` call.
-
----
-
-## 📝 Notes for Users
-
-### File Organization
-- Keep CSV files in the **same directory** as the notebook
-- Or adjust the path in Cell 5: `pd.read_csv("path/to/results_kappa_0.csv")`
-
-### Computational Time
-- Data loading: < 1 second
-- Plotting: < 30 seconds per major figure
-- Total runtime: ~5-10 minutes (yfinance download depends on internet speed)
-
-### Memory Requirements
-- Very modest: ~100 MB RAM needed
-
-### Jupyter Tips
-- Run cells sequentially (Ctrl+Enter)
-- Or: Kernel → Restart & Run All
-- Save outputs: figures auto-save to PNG/PDF
-
----
-
-## 🙋 Questions or Issues?
-
-For questions about:
-- **The code**: Check notebook comments and docstrings in `def_plots.py`
-- **The methodology**: See the paper (when published)
-- **Data interpretation**: Read the markdown sections in the notebook
-
----
-
-## 📄 License
-
-This repository is provided for **open research and education**. Feel free to use, modify, and extend for non-commercial purposes. Please cite the original work.
-
----
-
-## 🎉 Happy Analyzing!
-
-Explore the data, reproduce the results, and let us know if you discover anything interesting!
-
----
-
-**Last Updated:** 11 mai 2026  
-**Repository Version:** 1.0 (GitHub Edition)  
-**Status:** ✅ Ready for publication
