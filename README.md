@@ -13,7 +13,7 @@ This repository contains a complete empirical study on **model-free super-hedgin
 - **Amal Omrani** (CEREMADE, UMR CNRS 7534, Université Paris-Dauphine, PSL)
 
 ### Paper Status
-📝 **Preprint, 2026** (under review)
+📝 **Preprint, 2026** 
 
 ---
 
