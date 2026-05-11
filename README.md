@@ -46,25 +46,6 @@ scikit-learn
 jupyter
 ```
 
-### Installation
-```bash
-# Clone repository
-git clone https://github.com/[username]/GithubEmpericalStudy.git
-cd GithubEmpericalStudy
-
-# Install dependencies (optional: create virtual environment first)
-pip install pandas numpy matplotlib seaborn yfinance scikit-learn jupyter
-```
-
-### Running the Analysis
-```bash
-# Launch Jupyter notebook
-jupyter notebook Empirical_Analysis.ipynb
-
-# Or run in VS Code, Google Colab, etc.
-```
-
----
 
 ## 📊 What You'll Find
 
@@ -104,10 +85,7 @@ Detailed analysis of a single period (March 2023) with dense grid of 100 κ valu
 
 Shows price nearly **triples** as κ goes from 0 to 0.01.
 
-### **Section 6: LaTeX Tables**
-Export publication-ready tables for academic papers:
-- Summary statistics by κ value
-- Both full data and filtered (stable periods)
+
 
 ---
 
